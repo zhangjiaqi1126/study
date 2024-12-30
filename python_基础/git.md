@@ -1,6 +1,8 @@
-现在，假设我们从零开发，那么最好的方式是先创建远程库，然后，从远程库克隆。
+一、从远程库克隆
 
-首先，登陆GitHub，创建一个新的仓库，名字叫`gitskills`：
+先创建远程库，然后，从远程库克隆。
+
+首先，登陆GitHub，创建一个新的仓库
 
 ![github-init-repo](https://liaoxuefeng.com/books/git/remote/clone/create-repo.png)
 
@@ -24,4 +26,25 @@ Receiving objects: 100% (3/3), done.
 $ cd gitskills
 $ ls
 README.md
+```
+
+二、第二步，进入克隆的目录，用命令`git add`告诉Git，把文件添加到仓库：
+
+```
+$ git add readme.txt
+```
+
+三、第三步，用命令`git commit`告诉Git，把文件提交到仓库：
+
+```
+$ git commit -m "wrote a readme file"
+[master (root-commit) eaadf4e] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+```
+
+四、第四步，把本地库的所有内容推送到远程库上：
+
+```
+$ git push -u origin master
 ```
