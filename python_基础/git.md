@@ -56,3 +56,21 @@ $ git commit -m "wrote a readme file"
 ```
 $ git push -u origin master
 ```
+
+
+
+
+
+要查看当前所在的Git分支，可以使用以下命令：
+
+```bash
+git branch
+```
+
+使用 `git checkout` 命令来切换到另一个分支。
+
+例如，如果你想切换到名为 `dev` 的分支，可以使用以下命令：
+
+```bash
+git checkout dev
+```
